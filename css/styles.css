@@ -14,5 +14,24 @@ font-family: 'Alegreya SC', serif;
 
 html,
 body {
+    color: #0D3B66;
     font-family: 'Lato', sans-serif;
+}
+
+.logo-wrp {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 500;
+    font-size: 32px;
+    font-style: italic;
+    color: #F95738;
+    display: flex;
+    padding: 20px;
+}
+
+.logo-icon-wrp {
+    margin-right: 10px;
+    height: 32px;
+    display: flex;
+    justify-content: left;
+    fill: #F95738;
 }

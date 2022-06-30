@@ -16,22 +16,67 @@ html,
 body {
     color: #0D3B66;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 5px #0D3B66;
+}
+
+.filler-header {
+    width: 100%;
+    height: 70px;
+}
+
+.inner-header-wrp {
+    background-color:#FAF0CA;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .logo-wrp {
     font-family: 'Alegreya SC', serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 40px;
     font-style: italic;
     color: #F95738;
-    display: flex;
-    padding: 20px;
+    display: flex;    
 }
 
 .logo-icon-wrp {
     margin-right: 10px;
     height: 32px;
-    display: flex;
-    justify-content: left;
+    display: flex;    
     fill: #F95738;
+    cursor: pointer;
+}
+
+.logo-text-wrp {
+    cursor: pointer;
+}
+
+.search-wrp {
+    width: 65%;    
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-wrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.test-content {
+    height: 1000px;
+    width: 30%;
+    background-color: aquamarine;
+    
 }

@@ -1,0 +1,18 @@
+/* 
+COLORS:
+dark blue (text) - #0D3B66
+red-karmin (logo) - #F95738
+ohr (selected) - #F4D35E
+light-ohr (elements) - #FAF0CA
+white (background body) - #FFFFFF
+*/
+
+/*
+logo and (maby) some big texts - 
+font-family: 'Alegreya SC', serif;
+*/
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+}

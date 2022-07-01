@@ -29,6 +29,8 @@ header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .filler-header {
@@ -58,7 +60,7 @@ header {
 }
 
 .search-wrp {
-    width: 65%;        
+    width: 60%;        
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +105,7 @@ header {
 }
 
 .voice-icon-wrp {
-    margin-left: 10px;
+    margin: 0 10px 0 10px;
     height: 24px;
     display: flex;    
     fill: #969595;
@@ -116,12 +118,12 @@ header {
 
 .account-wrp {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .bell-wrap {
-    margin-right: 20px;
+    margin-right: 10px;
     height: 24px;
     display: flex;    
     fill: #969595;
@@ -132,14 +134,26 @@ header {
     fill: #4b4949;
 }
 
+.menu-wrap {
+    display: flex;       
+    background-color: #F95738;
+    height: 40px;
+    width: 40px;
+    fill: #0D3B66;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    height: 40%;
+}
+
 .test-content {
     height: 1000px;
     width: 200px;
     background-color: aquamarine;
     
-}
-
-.test-btn {
-    height: 32px;
-    width: 32px;
 }

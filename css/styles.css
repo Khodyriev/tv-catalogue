@@ -21,6 +21,7 @@ body {
     color: #0D3B66;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    font-weight: 700;
 }
 
 header {
@@ -69,14 +70,17 @@ header {
 }
 
 .search {
-    display: flex;    
+    display: flex;
+    flex-grow: 1; 
+    justify-content: center;
+    align-items: center;
 }
 
 .search-input {
-    width: 100%;
+    width: 60%;
     border: 1px solid #dddbdb;
     border-right: none;
-    padding: 6px;
+    padding: 7px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     outline: none;
@@ -89,7 +93,7 @@ header {
 .search-btn {
     display: flex;
     width: 32px;
-    height: 32px;
+    height: 31px;
     justify-content: center;
     align-items: center;
     border: 1px solid #dddbdb;    
@@ -105,7 +109,7 @@ header {
     fill: #F4D35E;
 }
 
-.voice-icon-wrp {
+.voice-icon {
     margin: 0 10px 0 10px;
     height: 24px;
     display: flex;    
@@ -113,7 +117,7 @@ header {
     cursor: pointer;
 }
 
-.voice-icon-wrp:hover {
+.voice-icon:hover {
     fill: #F4D35E;
 }
 
@@ -144,7 +148,7 @@ header {
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 50%;
     margin-right: 30px;
 }
 
@@ -162,7 +166,6 @@ header {
   .dropdown {
     position: relative;
     display: inline-block;
-    /* background-color: #F95738; */
   }
   
   .dropdown-content {
@@ -175,9 +178,7 @@ header {
     box-shadow: 0px 1px 4px 0px #0D3B66;
     z-index: 2;
     border-radius: 4px;
-  }
-
- 
+  } 
   
   .dropdown-content a {
     color: #0D3B66;
@@ -206,8 +207,184 @@ header {
     border-top: 1px solid #969595;    
   }
  
-  .test-content {
-    height: 1000px;
-    width: 200px;
-    background-color: #FAF0CA;    
+  aside {
+    width: 250px;
+    background-color: #FAF0CA;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 70px;
+    bottom: 0;        
+}
+
+.streamers-list {
+    width: 250px;    
+    display: flex;
+    flex-direction: column;    
+    overflow: auto;    
+}
+
+.streamer-info-card {
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.streamer-info-card:hover {
+    background-color: #F4D35E;
+}
+
+.streamer-avatar {
+    height: 40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 0 15px 0 15px;
+}
+
+.streamer-username {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;    
+    width: 100px;
+}
+
+.streamer-username:hover {
+    color: #F95738;
+}
+
+.wievers-amount {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;    
+    width: 50px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.blob {
+    display: inline-block;
+    background: black;
+	border-radius: 50%;
+	margin: 1px;
+	height: 12px;
+	width: 12px;
+}
+
+.blob.red {
+    background: rgba(255, 82, 82, 1);
+    box-shadow: 0 0 0 0 rgba(255, 82, 82, 1);
+    animation: pulse-red 2s infinite;
+  }
+  
+  @keyframes pulse-red {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+    }
+  }
+
+  .blob.red.offline {
+    opacity: 0;
+  }
+
+.outer-info-block {
+    border-top: 2px solid #FFFFFF;   
+}
+
+.info-block {
+    width: 220px;
+    height: 140px;
+    margin: 15px;
+    background-color: #F4D35E;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.text-info {
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+.text-info::selection {
+    color: #FAF0CA;
+    background: #F95738;
+}
+
+.contact-icons-wrp {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-icon {
+    height: 24px;
+    fill: #0D3B66;    
+}
+
+.contact-icon:hover {
+    fill: #F95738;
+}
+
+main {
+    padding-left: 250px;
+    height: 2000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    aside {
+        width: 70px;
+    }
+
+    main {
+        padding-left: 70px;
+    }
+
+    .streamers-list {
+        width: 70px;
+    }
+
+    .outer-info-block {
+        display: none;
+    }
+
+    .streamer-info-card {
+        width: 70px;
+    }
+
+    .blob,
+    .wievers-amount,
+    .streamer-username {
+        display: none;
+    }
 }

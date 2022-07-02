@@ -433,10 +433,14 @@ main {
     z-index: 2;
     fill: rgba(255, 255, 255, 0);
     display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 50px 1fr 1fr 1fr 50px;    
 }
 
 .start-paw {
     height: 46px;
+    grid-column: 3;
+    grid-row: 3;
     place-self: center;
     cursor: pointer;
 }
@@ -468,7 +472,7 @@ main {
 
 .viewers-amount {
     grid-column: 4/6;
-    grid-row: 4;
+    grid-row: 5;
     background-color: rgba(0, 0, 0, 0.7);    
     padding: 5px 10px 5px 10px;
     margin: 0 10px 10px 0;

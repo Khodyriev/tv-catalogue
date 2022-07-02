@@ -222,7 +222,8 @@ header {
     width: 250px;    
     display: flex;
     flex-direction: column;    
-    overflow: auto;    
+    overflow-y: auto;
+    overflow-x: hidden;    
 }
 
 .streamer-info-card {
@@ -245,22 +246,7 @@ header {
     margin: 0 15px 0 15px;
 }
 
-#bulka {
-    z-index: 1;
-}
 
-#bulka:hover {
-    opacity: 0;
-}
-
-.easter-egg {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin: 0 15px 0 15px;
-}
 
 .streamer-username {
     text-overflow: ellipsis;
@@ -368,12 +354,50 @@ main {
     height: 2000px;
 }
 
+.categoryes-block {
+    height: 70px;
+    display: grid;
+    grid-gap: 15px;    
+    margin-left: 15px;
+    margin-right: 15px;
+    grid-template-columns: repeat(25, minmax(min-content, max-content));
+    grid-template-rows: 70px;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
 
+.categoryes-block::-webkit-scrollbar { 
+    display: none; 
+}
 
+.caterory-item {
+    background-color: #FAF0CA;
+    border: 1px solid #969595;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
 
+.caterory-item:hover {
+    background-color: #F4D35E;
+}
 
+.categoryes-block div:first-child {
+    color: #FFFFFF;
+    background-color: #F95738;
+    border: 1px solid #F95738;
+}
 
-
+.carousel-wrp {    
+    height: 450px;
+    text-align: center;
+    background-color: #FAF0CA;
+    margin: 0 15px 0 15px;
+}
 
 
 
@@ -404,4 +428,33 @@ main {
     .streamer-username {
         display: none;
     }
+}
+
+@media screen and (min-height:650px) {
+
+    #bulka {
+        z-index: 1;
+    }
+    
+    #bulka:hover {
+        opacity: 0;
+    }
+    
+    .easter-egg {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin: 0 15px 0 15px;
+    }
+
+}
+
+@media screen and (max-height:649px) {
+
+    .easter-egg {
+        display: none;
+    }
+
 }

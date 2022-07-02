@@ -533,13 +533,19 @@ main {
 
 footer {
     display: grid;
-    grid-template-rows: 70px;
-    background-color: #dddbdb;
+    grid-template-rows: 70px;    
     margin: 10px 15px 10px 15px;    
 }
 
 .footer-content {
     place-self: center;
+    font-size: 18px;
+}
+
+.footer-link {
+    height: 16px;
+    fill: #0D3B66;
+    margin-left: 12px;
 }
 
 /* RESPONSE ---------------------------------------------------- */

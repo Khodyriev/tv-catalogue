@@ -245,22 +245,7 @@ header {
     margin: 0 15px 0 15px;
 }
 
-#bulka {
-    z-index: 1;
-}
 
-#bulka:hover {
-    opacity: 0;
-}
-
-.easter-egg {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin: 0 15px 0 15px;
-}
 
 .streamer-username {
     text-overflow: ellipsis;
@@ -368,6 +353,11 @@ main {
     height: 2000px;
 }
 
+.categories-block {
+    height: 70px;
+    display: grid;
+    background-color: aquamarine;
+}
 
 
 
@@ -404,4 +394,33 @@ main {
     .streamer-username {
         display: none;
     }
+}
+
+@media screen and (min-height:650px) {
+
+    #bulka {
+        z-index: 1;
+    }
+    
+    #bulka:hover {
+        opacity: 0;
+    }
+    
+    .easter-egg {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        margin: 0 15px 0 15px;
+    }
+
+}
+
+@media screen and (max-height:649px) {
+
+    .easter-egg {
+        display: none;
+    }
+    
 }

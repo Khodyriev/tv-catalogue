@@ -366,6 +366,7 @@ main {
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
+    cursor: pointer;
 }
 
 .categoryes-block::-webkit-scrollbar { 
@@ -379,8 +380,7 @@ main {
     border-radius: 15px;
     height: 20px;
     font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
+    font-weight: 400;    
 }
 
 .caterory-item:hover {
@@ -403,7 +403,7 @@ main {
 .videopanel-block {
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     margin: 0 15px 0 15px;
     background-color: #e6e6e6;
     
@@ -411,22 +411,19 @@ main {
 
 .video-container {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .video-info {
-    max-width: 300px;
+    /* max-width: 600px; */
     display: flex;    
     justify-content: space-between;
+    align-items: center;
 }
 
 .video-preview {    
-    max-width: 300px;
-}
-
-.video-info {
-    display: flex;
-    align-items: center;    
+    max-width: 300px;    
 }
 
 .video-text-info-block {
@@ -440,6 +437,13 @@ h5 {
     max-width: 220px;
 }
 
+p {
+    font-weight: 400;
+    color: #969595;
+}
+
+
+
 .streamer-avatar2 {
     height: 40px;
     width: 40px;
@@ -451,6 +455,7 @@ h5 {
 .video-options {
     fill: #0D3B66;
     height: 18px;
+    margin-right: 15px;
 }
 
 footer {

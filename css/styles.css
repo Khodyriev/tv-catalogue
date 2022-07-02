@@ -399,7 +399,12 @@ main {
     margin: 0 15px 0 15px;
 }
 
-
+.videopanel-block {
+    display: grid;
+    grid-gap: 15px;    
+    margin: 0 15px 0 15px;
+    background-color: #969595;
+}
 
 
 @media screen and (max-width:1200px) {
